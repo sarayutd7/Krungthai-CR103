@@ -22,9 +22,10 @@ npm install --save-dev cypress-mochawesome-reporter
 ```
 
 ## Check the import path: Ensure that the import path in your cypress/support/index.js file is correct. It should look like this:
-
+```
 import 'cypress-mochawesome-reporter/register';
 npm audit fix
+```
 
 ## Step 4: Open Cypress for the First Time
 ```sh
@@ -115,7 +116,21 @@ You have successfully set up Cypress in your Git repository! 🎉
 Now, you can start writing and running E2E tests to ensure the quality of your application.
 
 ## Run to cloudcypress
->> npx cypress run --record --key c19c2a97-bb84-4b28-92d0-018ae46e565d
-## Azure Setup
-### Run Cypress tests every time you push.
-## Webhook name - Krungthai CR103_Ad-Hoc DGL Loan Survey
+```
+Set ProjectID on Cypress.config.js
+Run Comment on Terminal
+npx cypress run --record --key c19c2a97-bb84-4b28-92d0-018ae46e565d
+```
+
+### Azure Setup
+# Run Cypress tests every time you push.
+```
+File azure-pipelines.yml
+```
+
+## Set Webhook in cypress cloud
+```
+Webhook name - Krungthai CR103_Ad-Hoc DGL Loan Survey
+Teams webhook URL - https://fb180ts.webhook.office.com/webhookb2/a8eeb52c-7b8b-4525-bd69-03fd99860da7@ee0108f5-8f89-428c-b434-66b281a65f5f/IncomingWebhook/860244794bf14f8f9d8671e79028c420/64547488-6803-4422-a6dc-9959976966c2/V2BwcU8h7uWh-FkCRY9EngK5ilIMaJtsoA4ymOtYBubN81
+Notifications - Select All runs
+```
