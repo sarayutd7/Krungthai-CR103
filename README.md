@@ -9,21 +9,21 @@ cd <your-project-folder>
 ## Step 2: Initialize npm (if not already initialized)
 ```
 npm init -y
-This command creates a `package.json` file, which helps manage dependencies.
 ```
+This command creates a `package.json` file, which helps manage dependencies.
+
 
 ## Step 3: Install Cypress
+# This installs Cypress as a development dependency.
 ```
 npm install cypress --save-dev
-This installs Cypress as a development dependency.
 
 npm install --save-dev cypress-mochawesome-reporter
+```
 
 ## Check the import path: Ensure that the import path in your cypress/support/index.js file is correct. It should look like this:
-```
+
 import 'cypress-mochawesome-reporter/register';
-
-
 npm audit fix
 
 ## Step 4: Open Cypress for the First Time
