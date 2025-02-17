@@ -16,9 +16,59 @@ This command creates a `package.json` file, which helps manage dependencies.
 ## Step 3: Install Cypress
 # This installs Cypress as a development dependency.
 ```
-npm install cypress --save-dev
+npm install cypress --save-dev 
+```
 
-npm install --save-dev cypress-mochawesome-reporter
+# Using mochawesome
+```
+npm install --save-dev mochawesome
+
+run command.
+
+cypress run --reporter mochawesome
+```
+ref.https://medium.com/@iMayank.Shekhar/cypress-generate-tests-reports-using-mochawesome-cf829d083d51
+
+# Installing cypress-mochawesome-reporter:
+```
+npm install cypress-mochawesome-reporter --save-dev
+```
+This command installs cypress-mochawesome-reporter, a reporter for Cypress that uses Mochawesome to generate test reports.
+
+ 
+#Installing mochawesome, mochawesome-merge, and mochawesome-report-generator:
+```
+npm install mochawesome mochawesome-merge mochawesome-report-generator --save-dev
+```
+
+- mochawesome: A tool for generating test reports in HTML and JSON formats.
+- mochawesome-merge: Used to merge multiple JSON report files together.
+- mochawesome-report-generator: Used to generate HTML reports from the merged JSON files.
+After installing these packages, you can configure Cypress to use cypress-mochawesome-reporter by adding the following settings to your cypress.json file:
+```
+{
+  reporter: 'cypress-mochawesome-reporter', 
+  reporterOptions: {
+    reportDir: 'cypress/reports',    // กำหนดโฟลเดอร์ที่เก็บรายงาน
+    reportFilename: 'test-report',   // ชื่อไฟล์รายงาน
+    overwrite: false,                // ไม่ลบไฟล์รายงานเก่าเมื่อรันใหม่
+    html: true,                      // สร้างรายงานเป็น HTML
+    json: false,                     // ไม่สร้างไฟล์ JSON
+    saveJson: false,                 // ไม่บันทึกไฟล์ JSON
+    merge: true,                     // รวมไฟล์รายงานทั้งหมด
+    timestamp: 'mmddyyyy_HHMMss',
+    charts: true,
+    code: true,
+    autoOpen: false,
+    quiet: false,
+    inline: true,
+    embeddedScreenshots: true
+  }
+}
+```
+And in your cypress/support/index.js file, add this line to enable the reporter:
+```
+import 'cypress-mochawesome-reporter/register';
 ```
 
 ## Check the import path: Ensure that the import path in your cypress/support/index.js file is correct. It should look like this:
