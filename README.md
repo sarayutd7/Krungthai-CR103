@@ -6,7 +6,6 @@ cd <your-project-folder>
 
 ## Step 2: Initialize npm (if not already initialized)
 npm init -y
-```
 This command creates a `package.json` file, which helps manage dependencies.
 
 
