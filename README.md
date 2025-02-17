@@ -10,7 +10,7 @@ cd <your-project-folder>
 ```
 npm init -y
 This command creates a `package.json` file, which helps manage dependencies.
-
+```
 
 ## Step 3: Install Cypress
 ```
