@@ -1,0 +1,1033 @@
+{
+    "survey": {
+        "surveyTitle": "CR103 Next_CR103_Ad-Hoc DGL Loan Survey",
+        "excel": "CR103 Next_CR103_Ad-Hoc DGL Loan Survey",
+        "blocks": [{
+                "blockId": "Q1",
+                "blockType": "Questions1",
+                "blockTitle": "Questions1",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ปัจจุบันท่านมีสินเชื่อประเภทใดบ้าง", "มีสินเชื่อแบบรับเงินก้อนครั้งเดียว", "มีกำหนดระยะเวลาผ่อนชำระแน่นอน", "Term Loan", "มีสินเชื่อแบบใช้หมุนเวียน", "คล้ายกับบัตรกดเงินสด", "คือ", "มีวงเงินให้เบิกใช้", "เมื่อจ่ายคืนก็สามารถเบิกมาใช้ได้อีกโดยไม่ต้องขอสินเชื่อใหม่", "Revolving Loan", "มีสินเชื่อทั้งสองประเภท", "ไม่มีสินเชื่อทั้ง", "2", "ประเภทเลย"
+
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice7E8AE2BB-1F54-499C-A231-14D3AAD33FAC",
+                        "inputType": "radio",
+                        "labelText": "มีสินเชื่อแบบรับเงินก้อนครั้งเดียว มีกำหนดระยะเวลาผ่อนชำระแน่นอน (Term Loan)",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceDD238D82-A4F2-41E3-B82D-98C523AF3AAF",
+                        "inputType": "radio",
+                        "labelText": "มีสินเชื่อแบบใช้หมุนเวียน คล้ายกับบัตรกดเงินสด คือ มีวงเงินให้เบิกใช้ เมื่อจ่ายคืนก็สามารถเบิกมาใช้ได้อีกโดยไม่ต้องขอสินเชื่อใหม่ (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceD40F1212-2F92-4F7D-B772-DB3BBF460538",
+                        "inputType": "radio",
+                        "labelText": "มีสินเชื่อทั้งสองประเภท",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice5C56C4DD-33EA-401D-9CDB-D6A9827E834C",
+                        "inputType": "radio",
+                        "labelText": "ไม่มีสินเชื่อทั้ง 2 ประเภทเลย",
+                        "status": null,
+                        "objectType": "single"
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.1",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q3A"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q2",
+                "blockType": "Questions2",
+                "blockTitle": "Questions2",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ท่านมีสินเชื่อหมุนเวียนอยู่กับสถาบันการเงินใดบ้าง",  "ธนาคารกรุงไทย",  "ธนาคารกสิกรไทย",  "ธนาคารไทยพาณิชย์", "ธนาคารกรุงศรี",  "ธนาคารออมสิน",  "ธนาคารอื่น", "ๆ", "เช่น", "ทีทีบี", "ยูโอบี", "ธนาคารกรุงเทพ", "เป็นต้น",  "บัตรกดเงินสด", "เช่น", "อิออน", "ยูเมะพลัส", "กรุงศรีเฟิร์สช้อย", "เอ", "มันนี่", "เป็นต้น",  "แอปเงินกู้ถูกกฎหมาย", "เช่น", "True Money", "Finnix", "Money Thunder", "LineBK", "Promise", "เป็นต้น",  "อื่นๆ", "โปรดระบุ" 
+                    ],
+                    "class": "block-content-main"
+                }],
+
+
+                "choices": [{
+                "inputId": "#choice7EAEAC5B-7B6C-4A93-9107-400848CF1351",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารกรุงไทย",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice711B54E7-CF5F-4A1F-8C8C-618194B9D47A",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารกสิกรไทย",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice937ED0CA-4EFD-461F-ABDE-11CE9B427750",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารไทยพาณิชย์",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice57E1AF26-5501-45BA-B450-82015CFA64E5",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารกรุงศรี",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choiceEA258D8F-AC37-4C24-B04A-C94CC1548869",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารออมสิน",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choiceEC058F95-8C03-48C3-87E9-26C85DBC71E0",
+                "inputType": "checkbox",
+                "labelText": "ธนาคารอื่น ๆ เช่น ทีทีบี, ยูโอบี, ธนาคารกรุงเทพ เป็นต้น",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice4AFDC1DE-AA4E-42DA-BB57-CE0C9D91405B",
+                "inputType": "checkbox",
+                "labelText": "บัตรกดเงินสด เช่น อิออน, ยูเมะพลัส, กรุงศรีเฟิร์สช้อย, เอ มันนี่ เป็นต้น",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice82479D9C-DEA9-4366-8B42-A71EC884FDEA",
+                "inputType": "checkbox",
+                "labelText": "แอปเงินกู้ถูกกฎหมาย เช่น True Money, Finnix, Money Thunder, LineBK, Promise เป็นต้น",
+                "status": "x",
+                "objectType": "single"
+            },
+            {
+                "inputId": "#choice6947620C-54B0-4316-ABBA-DB7B71A1310B",
+                "inputType": "checkbox",
+                "labelText": "อื่นๆ โปรดระบุ",
+                "status": "x",
+                "objectType": "multiple",
+                "appendText": {
+                    "inputId": "#choicetext6947620C-54B0-4316-ABBA-DB7B71A1310B",
+                    "inputType": "textarea",
+                    "maxLength": 4000,
+                    "text": "",
+                    "clickClass": "div#6947620C-54B0-4316-ABBA-DB7B71A1310B"
+                }
+            }],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q3A"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q3A",
+                "blockType": "Questions3A",
+                "blockTitle": "Questions3A",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "จากสินเชื่อส่วนบุคคลที่ท่านใช้งานอยู่", "ท่านใช้สินเชื่อเพื่อวัตถุประสงค์อะไรบ้าง", "เพื่อการซ่อมแซมบ้าน", "รถยนต์", "มอเตอร์ไซค์", "เพื่อซื้อรถยนต์", "จักรยานยนต์", "เพื่อจ่ายหนี้ก้อนอื่น", "เพื่อใช้จ่ายเกี่ยวกับการศึกษา", "ค่าเล่าเรียนต่าง", "เพื่อลงทุนต่อยอดธุรกิจต่างๆ", "เพื่อนำเงินมาหมุนเวียนในธุรกิจ", "เพื่อจ่ายค่ารักษาพยาบาล", "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป", "เช่น", "ค่าอาหาร", "เดินทาง", "ซื้อสินค้าหรือบริการต่างๆ", "เช่น", "มือถือ", "เครื่องใช้ไฟฟ้า", "เฟอร์นิเจอร์", "หรือการท่องเที่ยว", "อื่น", "โปรดระบุ", "ๆ"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choiceC6127292-281F-4A07-91FD-74AA1233EB09",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อการซ่อมแซมบ้าน รถยนต์ มอเตอร์ไซค์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice05A56271-D7FE-47E6-8C45-32F22E664E52",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อซื้อรถยนต์ จักรยานยนต์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice0F7BCB67-7E07-4D85-B817-E046A3C68680",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายหนี้ก้อนอื่น ๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice05DDE115-AEDA-43EB-B094-7C2493E21BC4",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายเกี่ยวกับการศึกษา ค่าเล่าเรียนต่าง ๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice948876EE-08F5-4989-8915-240FD845B08F",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อลงทุนต่อยอดธุรกิจต่าง ๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice257CDBAA-0FC2-4320-99F9-6A61FF703ABE",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อนำเงินมาหมุนเวียนในธุรกิจ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice5C18A62D-7261-4401-9095-11DA921EDDF8",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายค่ารักษาพยาบาล",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceFBFC507E-0523-40A4-8BCA-13FECACD6857",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป (เช่น ค่าอาหาร เดินทาง)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice51917A33-C51D-4E99-9408-6E59869538EC",
+                        "inputType": "checkbox",
+                        "labelText": "ซื้อสินค้าหรือบริการต่าง ๆ เช่น มือถือ เครื่องใช้ไฟฟ้า เฟอร์นิเจอร์ หรือการท่องเที่ยว เป็นต้น",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceBE86A105-8A31-4A93-AE9A-A6E62FD5DC0D",
+                        "inputType": "checkbox",
+                        "labelText": "อื่นๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetextBE86A105-8A31-4A93-AE9A-A6E62FD5DC0D",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#BE86A105-8A31-4A93-AE9A-A6E62FD5DC0D"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q3"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q4",
+                "blockType": "Questions4",
+                "blockTitle": "Questions4",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ท่านสนใจขอสินเชื่อหมุนเวียนหรือไม่", "ถ้าสินเชื่อหมุนเวียน", "คือการมีวงเงินให้เบิกใช้", "คล้ายกับบัตรกดเงินสด", "เมื่อจ่ายคืน", "ก็สามารถเบิกใช้ได้อีก", "สนใจ", "ไม่สนใจ", "ยังไม่แน่ใจ"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice5585EA72-9F79-473C-85E1-CADF7490E481",
+                        "inputType": "radio",
+                        "labelText": "สนใจ",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceE3825BEB-46B0-4EDC-A484-78F467105E4B",
+                        "inputType": "radio",
+                        "labelText": "ไม่สนใจ",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice9E9A271F-C77E-4BF7-A124-F1CE5CC1E81D",
+                        "inputType": "radio",
+                        "labelText": "ยังไม่แน่ใจ",
+                        "status": "x",
+                        "objectType": "single"
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q4C"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q4A",
+                "blockType": "Questions4A",
+                "blockTitle": "Questions4A",
+                "blockActive": false,
+                "blockContent": [{
+                    "text": [
+                        "ถ้าสนใจอยากทราบว่า", "สินเชื่อหมุนเวียนนี้เหมาะกับการใช้งานเพื่อวัตถุประสงค์ใด", "เพื่อการซ่อมแซมบ้าน", "รถยนต์", "มอเตอร์ไซค์", "เพื่อซื้อรถยนต์", "จักรยานยนต์", "เพื่อจ่ายหนี้ก้อนอื่น", "ๆ", "เพื่อใช้จ่ายเกี่ยวกับการศึกษา", "ค่าเล่าเรียนต่าง", "ๆ", "เพื่อลงทุนต่อยอดธุรกิจต่าง", "ๆ", "เพื่อนำเงินมาหมุนเวียนในธุรกิจ", "เพื่อจ่ายค่ารักษาพยาบาล", "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป", "เช่น", "ค่าอาหาร", "เดินทาง", "ซื้อสินค้าหรือบริการต่าง", "ๆ", "เช่น", "มือถือ", "เครื่องใช้ไฟฟ้า", "เฟอร์นิเจอร์", "หรือการท่องเที่ยว", "เป็นต้น", "ยังไม่มีวัตถุประสงค์แน่นอน", "แต่มีสินเชื่อไว้เพื่อใช้ยามฉุกเฉิน", "หรือเมื่อจำเป็น", "อื่น", "ๆ", "โปรดระบุ"
+                    ],
+                    "class": "block-content-main"
+                }],
+
+
+                "choices": [{
+                        "inputId": "#choiceA2E43851-164F-4323-B864-4FD57D0633B1",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อการซ่อมแซมบ้าน รถยนต์ มอเตอร์ไซต์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice7BBED0F7-DFBF-4C63-8B33-2FF246EAB2FD",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อซื้อรถยนต์ จักรยานยนต์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice8A88EE7E-EF69-4DE0-9B41-2FB1700CDC5D",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายหนี้ก้อนอื่นๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceC01FF5C9-A7D7-4C40-88F9-9E441C1B27D7",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายเกี่ยวกับการศึกษา ค่าเล่าเรียนต่างๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice95682D65-A6AC-46B8-A9F6-692EE3A47979",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อ ลงทุนทางการเงิน หรือ ลงทุนต่อยอดธุรกิจต่างๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice1AFCB032-3567-4D74-86F2-4163A250E5E1",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อนำเงินมาหมุนเวียนในธุรกิจ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice11C0FF22-5CC4-4997-ADA8-F695FD00EBCD",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายค่ารักษาพยาบาล",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceAE6FC7EC-ABB0-42BE-B9B9-3269425FF0BC",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป (เช่น ค่าอาหาร เดินทาง)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceFDDAC5BD-0DD3-431F-B5D3-458BEEA40C9D",
+                        "inputType": "checkbox",
+                        "labelText": "ซื้อสินค้าหรือบริการต่างๆ เช่น มือถือ เครื่องใช้ไฟฟ้า เฟอร์นิเจอร์ หรือการท่องเที่ยว เป็นต้น",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceF8DBBA55-850D-4B45-B58B-4E6AE2CA4ECB",
+                        "inputType": "checkbox",
+                        "labelText": "ยังไม่มีวัตถุประสงค์แน่นอน แต่มีสินเชื่อไว้เพื่อใช้ยามฉุกเฉิน หรือเมื่อจำเป็น",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceA9F32F6E-24F4-4ED3-A4CD-853A26DBAC7A",
+                        "inputType": "checkbox",
+                        "labelText": "อื่นๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetextA9F32F6E-24F4-4ED3-A4CD-853A26DBAC7A",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#A9F32F6E-24F4-4ED3-A4CD-853A26DBAC7A"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q5"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q4B",
+                "blockType": "Questions4B",
+                "blockTitle": "Questions4B",
+                "blockActive": false,
+                "blockContent": [{
+                    "text": [
+                        "ถ้าไม่สนใจอยากทราบว่า", "สินเชื่อหมุนเวียนนี้ไม่เหมาะกับการใช้งานเนื่องจากเหตุผลใด", "ไม่ต้องการเป็นหนี้เพิ่มเติม", "กังวลว่าพอมีวงเงินหมุนเวียนแล้ว", "จะใช้จ่ายจนมีหนี้เกินตัว", "กังวลว่าอัตราดอกเบี้ยหรือค่าธรรมเนียมจะสูงเกินไป", "กังวลว่าจะได้วงเงินไม่เพียงพอ", "ไม่เข้าใจเงื่อนไขการชำระของสินเชื่อหมุนเวียน", "Revolving Loan", "ไม่คุ้นเคยกับสินเชื่อหมุนเวียน", "Revolving Loan", "ไม่อยากเสียเวลาสมัครสินเชื่อเพิ่ม", "อื่น", "ๆ", "โปรดระบุ", "___", "ท่านสนใจขอสินเชื่อหมุนเวียนหรือไม่", "ถ้าสินเชื่อหมุนเวียน", "คือการมีวงเงินให้เบิกใช้", "คล้ายกับบัตรกดเงินสด", "เมื่อจ่ายคืน", "ก็สามารถเบิกใช้ได้อีก"
+                    ],
+                    "class": "block-content-main"
+                }],
+
+
+                "choices": [{
+                        "inputId": "#choice8776D6B6-35CB-453F-B605-27101E8DB50A",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่ต้องการเป็นหนี้เพิ่มเติม",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceA1EA8142-C394-4DAA-AE38-EE3E77495CC5",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าพอมีวงเงินหมุนเวียนแล้ว จะใช้จ่ายจนมีหนี้เกินตัว",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceC9B91DF9-653D-415C-916F-61C188A8CCCE",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าอัตราดอกเบี้ยหรือค่าธรรมเนียมจะสูงเกินไป",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice4D17EDA0-1498-4A0C-9696-1B1CBB38A3A4",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าจะได้วงเงินไม่เพียงพอ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice0FE3B24F-81D6-40C1-9F33-CD96C69CE036",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่เข้าใจเงื่อนไขการชำระของสินเชื่อหมุนเวียน (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice344AF077-4518-4CCA-9360-40285D1FAD01",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่คุ้นเคยกับสินเชื่อหมุนเวียน (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceCD7B55C9-8040-4EFD-9440-30A522F2C099",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่อยากเสียเวลาสมัครสินเชื่อเพิ่ม",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice15CC8993-63EE-454C-B7C1-A71EB514CF7B",
+                        "inputType": "checkbox",
+                        "labelText": "อื่น ๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetext15CC8993-63EE-454C-B7C1-A71EB514CF7B",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#15CC8993-63EE-454C-B7C1-A71EB514CF7B"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q3B"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q4C",
+                "blockType": "Questions4C",
+                "blockTitle": "Questions4C",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ถ้ายังไม่แน่ใจอยากทราบว่า", "สินเชื่อหมุนเวียนนี้ไม่เหมาะกับการใช้งานเนื่องจากเหตุผลใด", "ยังไม่เข้าใจเงื่อนไขการชำระของสินเชื่อหมุนเวียน", "Revolving Loan", "ไม่คุ้นเคยกับสินเชื่อหมุนเวียน", "Revolving Loan", "กังวลเกี่ยวกับขั้นตอนการสมัครของสินเชื่อหมุนเวียน", "Revolving Loan", "ยังไม่แน่ใจว่าต้องการมีสินเชื่อเพิ่มหรือไม่", "กังวลว่าพอมีวงเงินหมุนเวียนแล้ว", "จะใช้จ่ายจนมีหนี้เกินตัว", "กังวลว่าอัตราดอกเบี้ยหรือค่าธรรมเนียมจะสูงเกินไป", "กังวลว่าจะได้วงเงินไม่เพียงพอ", "อื่น", "ๆ", "โปรดระบุ"
+                    ],
+                    "class": "block-content-main"
+                }],
+
+
+                "choices": [{
+                        "inputId": "#choice8DA325C9-E55D-4881-A8CA-5159D5180463",
+                        "inputType": "checkbox",
+                        "labelText": "ยังไม่เข้าใจเงื่อนไขการชำระของสินเชื่อหมุนเวียน (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice27998DDB-C9FC-4EBC-9A53-F91BA65CAD24",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่คุ้นเคยกับสินเชื่อหมุนเวียน (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice703CCD10-5F9A-4627-A184-FF047E8AE87D",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลเกี่ยวกับขั้นตอนการสมัครของสินเชื่อหมุนเวียน (Revolving Loan)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice42111948-6F1E-42E9-85B8-57F2088F21BB",
+                        "inputType": "checkbox",
+                        "labelText": "ยังไม่แน่ใจว่าต้องการมีสินเชื่อเพิ่มหรือไม่",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice863092A2-1EC3-4010-8F12-D70152D656D6",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าพอมีวงเงินหมุนเวียนแล้ว จะใช้จ่ายจนมีหนี้เกินตัว",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceC9A518D3-BEEA-42F6-8E7B-039F689FF4F3",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าอัตราดอกเบี้ยหรือค่าธรรมเนียมจะสูงเกินไป",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceB4E15A3A-6C83-4122-A0C9-364F64F2F799",
+                        "inputType": "checkbox",
+                        "labelText": "กังวลว่าจะได้วงเงินไม่เพียงพอ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice27E53884-0642-4D87-923C-4E6E20B9E348",
+                        "inputType": "checkbox",
+                        "labelText": "อื่น ๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetext27E53884-0642-4D87-923C-4E6E20B9E348",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#27E53884-0642-4D87-923C-4E6E20B9E348"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q3B"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q3B",
+                "blockType": "Questions3B",
+                "blockTitle": "Questions3B",
+                "blockActive": false,
+                "blockContent": [{
+                    "text": ["หากท่านมีความต้องการที่จะใช้สินเชื่อส่วนบุคคล", "ท่านคิดว่าจะใช้สินเชื่อเพื่อวัตถุประสงค์อะไรบ้าง", "เพื่อการซ่อมแซมบ้าน", "รถยนต์", "มอเตอร์ไซค์", "เพื่อซื้อรถยนต์", "จักรยานยนต์", "เพื่อจ่ายหนี้ก้อนอื่น", "ๆ", "เพื่อใช้จ่ายเกี่ยวกับการศึกษา", "ค่าเล่าเรียนต่าง", "ๆ", "เพื่อลงทุนต่อยอดธุรกิจต่าง", "ๆ", "เพื่อนำเงินมาหมุนเวียนในธุรกิจ", "เพื่อจ่ายค่ารักษาพยาบาล", "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป", "เช่น", "ค่าอาหาร", "เดินทาง", "ซื้อสินค้าหรือบริการต่าง", "ๆ", "เช่น", "มือถือ", "เครื่องใช้ไฟฟ้า", "เฟอร์นิเจอร์", "หรือการท่องเที่ยว", "เป็นต้น", "เพื่อใช้ยามฉุกเฉิน", "หรือ", "หากเกิดเหตุไม่คาดคิด", "อื่น", "ๆ", "โปรดระบุ", "___"],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice7ADB02D1-BC84-4A99-BB26-28AB1C475CFA",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อการซ่อมแซมบ้าน รถยนต์ มอเตอร์ไซต์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice763BA1F3-6685-4CA0-B7DB-DFD749678BDA",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อซื้อรถยนต์ จักรยานยนต์",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice9603D789-B17A-495E-819D-C7AF75B0D6A1",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายหนี้ก้อนอื่นๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceF0132427-E876-4C35-B70E-87F664A9E40E",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายเกี่ยวกับการศึกษา ค่าเล่าเรียนต่างๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceED1FC459-9880-4B8C-8CB4-9F1A43332A1A",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อลงทุนต่อยอดธุรกิจต่าง ๆ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceED18CC5D-4E10-4113-9531-28935ADC3CE1",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อนำเงินมาหมุนเวียนในธุรกิจ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice26678A18-2D37-4282-9BC9-13C339FE1D04",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อจ่ายค่ารักษาพยาบาล",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceAE0CAA35-E026-409B-96A9-8C6911318D71",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้จ่ายในชีวิตประจำวันทั่วไป (เช่น ค่าอาหาร เดินทาง)",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceEA03FE96-A761-4BA9-95B4-697518038773",
+                        "inputType": "checkbox",
+                        "labelText": "ซื้อสินค้าหรือบริการต่างๆ เช่น มือถือ เครื่องใช้ไฟฟ้า เฟอร์นิเจอร์ หรือการท่องเที่ยว เป็นต้น",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice16BDD116-C069-4EE3-83A1-63B538C9FA0D",
+                        "inputType": "checkbox",
+                        "labelText": "เพื่อใช้ยามฉุกเฉิน หรือ หากเกิดเหตุไม่คาดคิด",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice243F74B7-19ED-48C0-A0DD-99E595928AED",
+                        "inputType": "checkbox",
+                        "labelText": "อื่น ๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetext243F74B7-19ED-48C0-A0DD-99E595928AED",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#243F74B7-19ED-48C0-A0DD-99E595928AED"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q5"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q5",
+                "blockType": "Questions5",
+                "blockTitle": "Questions5",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ปัจจัยที่คุณใช้ในการพิจารณาเลือกใช้ธนาคารสำหรับผลิตภัณฑ์สินเชื่อหมุนเวียน", "Revolving Loan", "ได้วงเงินสูง", "ดอกเบี้ยถูก", "ผ่อนได้นาน", "รู้ผลการสมัครเร็ว", "ขั้นตอนและเอกสารในการสมัครง่าย", "ไม่ยุ่งยาก", "ใช้สถาบันการเงินนี้เป็นประจำอยู่แล้ว", "เงื่อนไขการผ่อนชำระที่ยืดหยุ่นกว่า", "เช่น", "กำหนดงวดชำระได้", "หรือ", "แบ่งจ่ายเป็นรายสัปดาห์ได้", "ช่องทางการผ่อนชำระที่หลากหลาย", "อัตราดอกเบี้ยโปร่งใส", "ไม่มีค่าธรรมเนียมแอบแฝง", "อื่น", "ๆ", "โปรดระบุ"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice4D5D2614-193E-4CF2-8635-D058CB4C9922",
+                        "inputType": "checkbox",
+                        "labelText": "ได้วงเงินสูง",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceEB0CD92D-0C30-4808-B828-481F62CE5835",
+                        "inputType": "checkbox",
+                        "labelText": "ดอกเบี้ยถูก",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice5EA8E872-DE63-4DA8-917F-F750E155816F",
+                        "inputType": "checkbox",
+                        "labelText": "ผ่อนได้นาน",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice6668B1BD-04CA-4F74-8BAB-99010A655A82",
+                        "inputType": "checkbox",
+                        "labelText": "รู้ผลการสมัครเร็ว",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceF767DEDB-B904-4D1B-B74C-273382286BC4",
+                        "inputType": "checkbox",
+                        "labelText": "ขั้นตอนและเอกสารในการสมัครง่าย/ไม่ยุ่งยาก",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice4194172F-2607-4C13-B281-82133C120E0F",
+                        "inputType": "checkbox",
+                        "labelText": "ใช้สถาบันการเงินนี้เป็นประจำอยู่แล้ว",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceDBC52EA6-745E-4BC6-982B-14CC6A7179EC",
+                        "inputType": "checkbox",
+                        "labelText": "เงื่อนไขการผ่อนชำระที่ยืดหยุ่นกว่า เช่น กำหนดงวดชำระได้ หรือ แบ่งจ่ายเป็นรายสัปดาห์ได้",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceB16584DC-4B1A-4616-A119-EA739B17D6D1",
+                        "inputType": "checkbox",
+                        "labelText": "ช่องทางการผ่อนชำระที่หลากหลาย",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice7A5270D8-5736-4254-BFA4-43CE5E41ACCB",
+                        "inputType": "checkbox",
+                        "labelText": "อัตราดอกเบี้ยโปร่งใส ไม่มีค่าธรรมเนียมแอบแฝง",
+                        "status": "x",
+                        "objectType": "multiple"
+                    },
+                    {
+                        "inputId": "#choiceBFF79CC9-C264-4448-9085-4FBA3E82E5AF",
+                        "inputType": "checkbox",
+                        "labelText": "อื่น ๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetextBFF79CC9-C264-4448-9085-4FBA3E82E5AF",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#BFF79CC9-C264-4448-9085-4FBA3E82E5AF"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q6"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+
+
+            },
+            {
+                "blockId": "Q6",
+                "blockType": "Questions6",
+                "blockTitle": "Questions6",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "สิ่งใดต่อไปนี้ที่ทำให้คุณอยากใช้งานสินเชื่อหมุนเวียน", "Revolving Loan", "มีเฉพาะค่าธรรมเนียมการเบิกถอนในแต่ละก้อน", "แต่ไม่มีดอกเบี้ยเพิ่มเติม", "ไม่มีค่าธรรมเนียมเบิกถอนเงินสด", "แต่คิดเฉพาะดอกเบี้ย", "เลือกวันครบกำหนดชำระเป็น", "รายเดือน", "รายสัปดาห์", "หรือรายวันได้", "สามารถข้ามการผ่อนชำระบางงวดได้", "กรณีมีเหตุไม่คาดฝัน", "ระยะเวลาผ่อนชำระสูงสุด", "36", "เดือน", "สามารถเลือกชำระขั้นต่ำได้", "ตามที่ธนาคารกำหนด", "นำวงเงินสินเชื่อไปซื้อ", "ผ่อน", "สินค้าและบริการต่าง", "ๆ", "ได้โดยตรง", "โดยไม่ต้องถอนเงินสด", "สามารถชำระสินเชื่อได้ผ่านช่องทางอื่น", "ๆ", "นอกเหนือจากของธนาคาร", "เช่น", "7-11", "Tesco Lotus", "Big C", "โอนเงินจากวงเงินสินเชื่อเข้าบัญชีได้ทุกที่ทุกเวลา", "เพิ่มวงเงินให้อัตโนมัติ", "เมื่อเบิกวงเงินสินเชื่อสม่ำเสมอและชำระตรงเวลา", "ตัวเลือกที่กล่าวมาไม่น่าสนใจเลย", "อื่น", "ๆ", "โปรดระบุ"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice182F09CB-F1A6-44D1-8EFF-07231AA8401F",
+                        "inputType": "checkbox",
+                        "labelText": "มีเฉพาะค่าธรรมเนียมการเบิกถอนในแต่ละก้อน แต่ไม่มีดอกเบี้ยเพิ่มเติม",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceBAC4ED22-1B43-4969-934C-AEAA5E34FA93",
+                        "inputType": "checkbox",
+                        "labelText": "ไม่มีค่าธรรมเนียมเบิกถอนเงินสด แต่คิดเฉพาะดอกเบี้ย",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice1ADD001B-9585-425E-A0F4-8A99985E87F7",
+                        "inputType": "checkbox",
+                        "labelText": "เลือกวันครบกำหนดชำระเป็น รายเดือน รายสัปดาห์ หรือรายวันได้",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceD8F02C15-1E98-49DE-8B59-3F4342B6BB67",
+                        "inputType": "checkbox",
+                        "labelText": "สามารถข้ามการผ่อนชำระบางงวดได้ กรณีมีเหตุไม่คาดฝัน",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice81DEA14A-E5C6-4558-9C9C-66DD5D3DCEE2",
+                        "inputType": "checkbox",
+                        "labelText": "ระยะเวลาผ่อนชำระสูงสุด 36 เดือน",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice709BCEA2-19CF-4F2C-95B2-46649D2A9839",
+                        "inputType": "checkbox",
+                        "labelText": "สามารถเลือกชำระขั้นต่ำได้ ตามที่ธนาคารกำหนด",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice095CE2D4-5E72-4136-9A08-F7565349296A",
+                        "inputType": "checkbox",
+                        "labelText": "นำวงเงินสินเชื่อไปซื้อ/ผ่อน สินค้าและบริการต่างๆได้โดยตรง โดยไม่ต้องถอนเงินสด",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice583E8264-DB5C-4D1A-9AF0-1F24CA7DD608",
+                        "inputType": "checkbox",
+                        "labelText": "สามารถชำระสินเชื่อได้ผ่านช่องทางอื่นๆ นอกเหนือจากของธนาคาร เช่น 7-11, Tesco Lotus, Big C",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceE35F3867-85FC-4916-B6AE-54E5A54E9014",
+                        "inputType": "checkbox",
+                        "labelText": "โอนเงินจากวงเงินสินเชื่อเข้าบัญชีได้ทุกที่ทุกเวลา",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceCA5E1154-4606-4307-98FD-46DA0B66C3ED",
+                        "inputType": "checkbox",
+                        "labelText": "เพิ่มวงเงินให้อัตโนมัติ เมื่อเบิกวงเงินสินเชื่อสม่ำเสมอและชำระตรงเวลา",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice6EFB9309-BBD5-41F6-B374-5022981B30EF",
+                        "inputType": "checkbox",
+                        "labelText": "ตัวเลือกที่กล่าวมาไม่น่าสนใจเลย",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choiceE8E5684C-218D-471C-9267-D30B08D80A41",
+                        "inputType": "checkbox",
+                        "labelText": "อื่น ๆ โปรดระบุ",
+                        "status": "x",
+                        "objectType": "multiple",
+                        "appendText": {
+                            "inputId": "#choicetextE8E5684C-218D-471C-9267-D30B08D80A41",
+                            "inputType": "textarea",
+                            "maxLength": 4000,
+                            "text": "",
+                            "clickClass": "div#E8E5684C-218D-471C-9267-D30B08D80A41"
+                        }
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q7"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q7",
+                "blockType": "Questions7",
+                "blockTitle": "Questions7",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "จากทางเลือกระยะเวลาในการชำระสินเชื่อบุคคล", "ท่านชอบทางเลือกในการชำระสินเชื่อแบบใดมากกว่ากัน", "มีระยะเวลาชำระหนี้นาน", "20", "วัน", "หลังจากวันที่สรุปใบแจ้งหนี้", "แต่หากชำระล่าช้าเล็กน้อย", "จะเสียประวัติทันที", "มีระยะเวลาชำระหนี้สั้น", "10", "วัน", "หลังจากวันที่สรุปใบแจ้งหนี้", "แต่หากชำระล่าช้าเล็กน้อย", "จะยังไม่เสียประวัติทันที"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choiceB1C9E338-101E-4663-9DB6-8C3D1163EEF8",
+                        "inputType": "radio",
+                        "labelText": "มีระยะเวลาชำระหนี้นาน (20 วัน) หลังจากวันที่สรุปใบแจ้งหนี้ แต่หากชำระล่าช้าเล็กน้อย จะเสียประวัติทันที",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice9C9A7B37-456F-4112-B39A-F961295C7795",
+                        "inputType": "radio",
+                        "labelText": "มีระยะเวลาชำระหนี้สั้น (10 วัน) หลังจากวันที่สรุปใบแจ้งหนี้ แต่หากชำระล่าช้าเล็กน้อย จะยังไม่เสียประวัติทันที",
+                        "status": "x",
+                        "objectType": "single"
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "Q8"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "Q8",
+                "blockType": "Questions8",
+                "blockTitle": "Questions8",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "ปัจจุบันท่านถือบัตรเครดิตอยู่หรือไม่", "มีบัตรเครดิต", "1", "ใบ", "มีบัตรเครดิตมากกว่า", "1", "ใบ", "ไม่มีบัตรเครดิต"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [{
+                        "inputId": "#choice6A602F3D-D24A-4C69-B68C-BB81C997D224",
+                        "inputType": "radio",
+                        "labelText": "มีบัตรเครดิต 1 ใบ",
+                        "status": "x",
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice98855C99-A997-4DF2-9B31-B1A384C76D1A",
+                        "inputType": "radio",
+                        "labelText": "มีบัตรเครดิตมากกว่า 1 ใบ",
+                        "status": null,
+                        "objectType": "single"
+                    },
+                    {
+                        "inputId": "#choice40AA1FAB-2B2F-4365-A143-7D037FED789E",
+                        "inputType": "radio",
+                        "labelText": "ไม่มีบัตรเครดิต",
+                        "status": null,
+                        "objectType": "single"
+                    }
+                ],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "EndPage"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            },
+            {
+                "blockId": "EndPage",
+                "blockType": "EndPage",
+                "blockTitle": "EndPage",
+                "blockActive": true,
+                "blockContent": [{
+                    "text": [
+                        "คุณต้องการยืนยัน", "คำตอบทั้งหมดนี้หรือไม่"
+                    ],
+                    "class": "block-content-main"
+                }],
+                "choices": [],
+                "buttons": [{
+                    "buttonId": "nextButton",
+                    "buttonType": "button",
+                    "buttonText": "ถัดไป",
+                    "class": "survey_button.button_next.2",
+                    "status": "x",
+                    "action": "goToNext",
+                    "nextStep": "EndPage"
+                }],
+                "screenshot": "x",
+                "debugger": null,
+                "pause": null
+            }
+        ]
+    }
+}
