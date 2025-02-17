@@ -1,15 +1,18 @@
 ## Step 1: Clone the Repository
 # Clone your project repository
+```
 git clone <your-repository-url>
 cd <your-project-folder>
 
 
 ## Step 2: Initialize npm (if not already initialized)
+```
 npm init -y
 This command creates a `package.json` file, which helps manage dependencies.
 
 
 ## Step 3: Install Cypress
+```
 npm install cypress --save-dev
 This installs Cypress as a development dependency.
 
