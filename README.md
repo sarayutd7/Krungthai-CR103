@@ -109,3 +109,8 @@ cypress/screenshots/
 ## Conclusion
 You have successfully set up Cypress in your Git repository! 🎉
 Now, you can start writing and running E2E tests to ensure the quality of your application.
+
+## Run to cloudcypress
+>> npx cypress run --record --key c19c2a97-bb84-4b28-92d0-018ae46e565d
+## Azure Setup
+### Run Cypress tests every time you push.
