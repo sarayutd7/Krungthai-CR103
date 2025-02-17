@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 
 module.exports = defineConfig({
-  projectId: "rtywdi", //Project setup cypress
+  projectId: "x175kx", //Project setup cypress
   e2e: {
     setupNodeEvents(on, config) {
       //require('cypress-mochawesome-reporter/plugin')(on);
