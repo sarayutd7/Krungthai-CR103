@@ -131,6 +131,6 @@ File azure-pipelines.yml
 ## Set Webhook in cypress cloud
 ```
 Webhook name - Krungthai CR103_Ad-Hoc DGL Loan Survey
-Teams webhook URL - https://fb180ts.webhook.office.com/webhookb2/a8eeb52c-7b8b-4525-bd69-03fd99860da7@ee0108f5-8f89-428c-b434-66b281a65f5f/IncomingWebhook/860244794bf14f8f9d8671e79028c420/64547488-6803-4422-a6dc-9959976966c2/V2BwcU8h7uWh-FkCRY9EngK5ilIMaJtsoA4ymOtYBubN81
+Teams webhook URL -  
 Notifications - Select All runs
 ```
