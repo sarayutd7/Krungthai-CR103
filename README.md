@@ -2,7 +2,7 @@
 # Clone your project repository
 git clone <your-repository-url>
 cd <your-project-folder>
-```
+
 
 ## Step 2: Initialize npm (if not already initialized)
 npm init -y
