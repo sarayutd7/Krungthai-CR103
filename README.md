@@ -121,6 +121,46 @@ Set ProjectID on Cypress.config.js
 Run Comment on Terminal
 npx cypress run --record --key 24e7040a-1a38-490a-bdb4-b1804d08e754
 ```
+## set and config azure-pipelines.yml 
+```
+# To configure triggers for Azure CI see
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#tags
+jobs:
+  - job: Cypress_tests
+    pool:
+      vmImage: 'ubuntu-latest'
+    # Runs tests in parallel https://docs.cypress.io/guides/guides/parallelization
+    # https://learn.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
+    strategy:
+      parallel: 2
+    steps:
+      - task: NodeTool@0
+      # Caches dependencies using npm lock file as key
+      # https://docs.cypress.io/guides/continuous-integration/introduction#Caching
+      - task: CacheBeta@1
+        inputs:
+          key: npm | package-lock.json
+          path: /home/vsts/.npm
+          restoreKeys: npm | package-lock.json
+      - task: CacheBeta@1
+        inputs:
+          key: cy | package-lock.json
+          path: /home/vsts/.cache/Cypress
+          restoreKeys: cy | package-lock.json
+      - script: npm ci --prefer-offline
+      # Starts web server for E2E tests - replace with your own server invocation
+      # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
+      - script: npm start &
+      - script: npx wait-on 'http-get://localhost:3000' # Waits for above
+      # Runs tests in parallel and records to Cypress Cloud
+      # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
+      # https://docs.cypress.io/guides/guides/parallelization
+      - script: npx cypress run --record --parallel --ci-build-id $BUILD_BUILDNUMBER
+        # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
+        # in Azure DevOps → Your Pipeline → Edit → Variables
+        env:
+          CYPRESS_RECORD_KEY: $(CYPRESS_RECORD_KEY)
+```
 
 ### Azure Setup
 # Run Cypress tests every time you push.
