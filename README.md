@@ -119,7 +119,7 @@ Now, you can start writing and running E2E tests to ensure the quality of your a
 ```
 Set ProjectID on Cypress.config.js
 Run Comment on Terminal
-npx cypress run --record --key c19c2a97-bb84-4b28-92d0-018ae46e565d
+npx cypress run --record --key 24e7040a-1a38-490a-bdb4-b1804d08e754
 ```
 
 ### Azure Setup
