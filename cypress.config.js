@@ -25,16 +25,17 @@ module.exports = defineConfig({
     screenshotOnRunFailure: true,
     browser: 'chrome',
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // implement node event listeners here 
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
-  },
+  }, 
   reporter: 'cypress-mochawesome-reporter', 
   reporterOptions: {
     reportDir: 'cypress/reports',    // กำหนดโฟลเดอร์ที่เก็บรายงาน
     reportFilename: 'test-report',   // ชื่อไฟล์รายงาน
-    overwrite: false,                // ไม่ลบไฟล์รายงานเก่าเมื่อรันใหม่
+    overwrite: true,                // ไม่ลบไฟล์รายงานเก่าเมื่อรันใหม่
     html: true,                      // สร้างรายงานเป็น HTML
-    json: false,                     // ไม่สร้างไฟล์ JSON
+    json: true,                     // ไม่สร้างไฟล์ JSON
     saveJson: false,                 // ไม่บันทึกไฟล์ JSON
     merge: true,                     // รวมไฟล์รายงานทั้งหมด
     timestamp: 'mmddyyyy_HHMMss',
@@ -43,6 +44,7 @@ module.exports = defineConfig({
     autoOpen: false,
     quiet: false,
     inline: true,
-    embeddedScreenshots: true
+    saveJson: false,
+    embeddedScreenshots: false
   }
 });
