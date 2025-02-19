@@ -1,11 +1,50 @@
 const { defineConfig } = require("cypress");
 
+const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
+const { sendToDiscordWebhookForEachSpec, afterSpecFunction } = require('cypress-discord-webhook-integration'); // import lib
+const { sendToDiscordWebhook } = require('cypress-discord-webhook-integration');
+
+
+
+
+
+// --------------------required part------------------------------
+//const webhookURL = 'https://discord.com/api/webhooks/1341614819991879752/lN7ZDh70iqpomtA1622Cr9jPIQIO7DnCFoBsRGOoiZl6GadoY72soGzQHHKGRZh9Iu40'; // Webhook Krungthai Channal 
+const webhookURL = 'https://discord.com/api/webhooks/1340989758863835167/WhaHDuRa2d7jHldLpZWoMBhw2O4aSevptWW9z1_5O2a4XQvqUaNBeB5bLoiREC0QaOc5'; // Webhook channel test
+// --------------------required part------------------------------
+const files = ['./cypress/reports/test-report.html']; // REQUIRED: File paths
+// --------------------custom data------------------------------
+const customUsername = 'Bot Check Centralized NPS API'; // Custom name for Bot's username in Discord
+const customMessage = 'Check Centralized NPS API'; // Custom message for Bot's message in Discord
+const customAvatar = 'https://cdn.sanity.io/images/o0o2tn5x/production/13b9c8412093e2f0cdb5495e1f59144967fa1664-512x512.jpg'; // Custom avatar URL for Bot in Discord
+// --------------------custom data------------------------------
+
+// --------------------required part------------------------------
+
 
 module.exports = defineConfig({
   projectId: "x175kx", //Project setup cypress
+  reporter: 'cypress-mochawesome-reporter', 
+  reporterOptions: {
+    reportDir: 'cypress/reports',    // กำหนดโฟลเดอร์ที่เก็บรายงาน
+    reportFilename: 'test-report',   // ชื่อไฟล์รายงาน
+    overwrite: true,                // ไม่ลบไฟล์รายงานเก่าเมื่อรันใหม่
+    html: true,                      // สร้างรายงานเป็น HTML
+    json: true,                     // ไม่สร้างไฟล์ JSON
+    saveJson: false,                 // ไม่บันทึกไฟล์ JSON
+    merge: true,                     // รวมไฟล์รายงานทั้งหมด
+    //timestamp: 'mmddyyyy_HHMMss',
+    charts: true,
+    code: true,
+    autoOpen: false,
+    quiet: false,
+    inline: true,
+    saveJson: false,
+    embeddedScreenshots: false
+  },
   e2e: {
     setupNodeEvents(on, config) {
-      //require('cypress-mochawesome-reporter/plugin')(on);
+      //require('cypress-mochawesome-reporter/plugin')(on); 
     },
     env:{
       UAT1: 'https://ktbsurveyconductui-uat.feedback180.com/STAFF15',
@@ -27,24 +66,53 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here 
       require('cypress-mochawesome-reporter/plugin')(on);
+
+      on('before:run', async (details) => {
+        await beforeRunHook(details);
+      }); 
+
+
+      on('after:run', async (results) => { 
+        //Second generate file. fix file not found
+        await afterRunHook();
+        // Using function
+        //SendPNGtoDiscord
+        await sendToDiscordWebhook(
+          webhookURL, 
+          files, 
+          'Check Krungthai CR103 Result', // set to undefined if you don't use custom message, but use custom avatar, custom username functionality
+          customUsername, // set to undefined if you don't use custom username, but use custom avatar functionality
+          customAvatar, // set to undefined if you don't use custom message
+          true,           // if you want to convert HTML files to PNG set it as true, or remove it if you don't want to use this functionality
+        );
+        //SendPNGtoDiscord
+
+        //SendHTMLtoDiscord
+        await sendToDiscordWebhook(
+          webhookURL, 
+          files, 
+          'Check Krungthai CR103 HTML Files Check', // set to undefined if you don't use custom message, but use custom avatar, custom username functionality
+          customUsername, // set to undefined if you don't use custom username, but use custom avatar functionality
+          customAvatar, // set to undefined if you don't use custom message
+          false,           // if you want to convert HTML files to PNG set it as true, or remove it if you don't want to use this functionality
+        );
+        //SendPNGtoDiscord
+
+        //SendTextResulttoDiscord
+        await sendToDiscordWebhook(
+          webhookURL, 
+          ['./cypress/result.txt'], 
+          'Check Krungthai CR103 Text Files Check', // set to undefined if you don't use custom message, but use custom avatar, custom username functionality
+          customUsername, // set to undefined if you don't use custom username, but use custom avatar functionality
+          customAvatar, // set to undefined if you don't use custom message
+          false,           // if you want to convert HTML files to PNG set it as true, or remove it if you don't want to use this functionality
+        );
+        //SendTextResulttoDiscord
+        // --------------------required part------------------------------
+      });
+
+      return config;
     },
-  }, 
-  reporter: 'cypress-mochawesome-reporter', 
-  reporterOptions: {
-    reportDir: 'cypress/reports',    // กำหนดโฟลเดอร์ที่เก็บรายงาน
-    reportFilename: 'test-report',   // ชื่อไฟล์รายงาน
-    overwrite: true,                // ไม่ลบไฟล์รายงานเก่าเมื่อรันใหม่
-    html: true,                      // สร้างรายงานเป็น HTML
-    json: true,                     // ไม่สร้างไฟล์ JSON
-    saveJson: false,                 // ไม่บันทึกไฟล์ JSON
-    merge: true,                     // รวมไฟล์รายงานทั้งหมด
-    timestamp: 'mmddyyyy_HHMMss',
-    charts: true,
-    code: true,
-    autoOpen: false,
-    quiet: false,
-    inline: true,
-    saveJson: false,
-    embeddedScreenshots: false
-  }
+    specPattern: 'cypress/e2e/**/*.cy.{js, jsx, ts, tsx}'
+  },  
 });
