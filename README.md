@@ -17,6 +17,29 @@ This command creates a `package.json` file, which helps manage dependencies.
 # This installs Cypress as a development dependency.
 ```
 npm install cypress --save-dev 
+
+npm uninstall mochawesome mochawesome-merge mochawesome-report-generator
+
+npm install cypress-mochawesome-reporter --save-dev
+
+npm i cypress-discord-webhook-integration
+
+npm list puppeteer
+
+npm uninstall puppeteer
+
+npm install puppeteer@latest
+
+npm audit fix --force
+
+npm install puppeteer@latest
+
+npm i cypress-discord-webhook-integration
+
+npm install node-html-to-image
+
+npm install ws
+
 ```
 
 # Using mochawesome
@@ -169,7 +192,7 @@ Now, you can start writing and running E2E tests to ensure the quality of your a
 ```
 Set ProjectID on Cypress.config.js
 Run Comment on Terminal
-npx cypress run --record --key 24e7040a-1a38-490a-bdb4-b1804d08e754
+npx cypress run --record --key 24e7040a-1a38-490a-bdb4-b1804d08e754 | tee './cypress/result.txt'
 ```
 ## set and config azure-pipelines.yml 
 ```
