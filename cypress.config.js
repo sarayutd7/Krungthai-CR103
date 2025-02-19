@@ -9,12 +9,12 @@ const { sendToDiscordWebhook } = require('cypress-discord-webhook-integration');
 
 
 // --------------------required part------------------------------
-//const webhookURL = 'https://discord.com/api/webhooks/1341614819991879752/lN7ZDh70iqpomtA1622Cr9jPIQIO7DnCFoBsRGOoiZl6GadoY72soGzQHHKGRZh9Iu40'; // Webhook Krungthai Channal 
-const webhookURL = 'https://discord.com/api/webhooks/1340989758863835167/WhaHDuRa2d7jHldLpZWoMBhw2O4aSevptWW9z1_5O2a4XQvqUaNBeB5bLoiREC0QaOc5'; // Webhook channel test
+const webhookURL = 'https://discord.com/api/webhooks/1341614819991879752/lN7ZDh70iqpomtA1622Cr9jPIQIO7DnCFoBsRGOoiZl6GadoY72soGzQHHKGRZh9Iu40'; // Webhook Krungthai Channal 
+//const webhookURL = 'https://discord.com/api/webhooks/1340989758863835167/WhaHDuRa2d7jHldLpZWoMBhw2O4aSevptWW9z1_5O2a4XQvqUaNBeB5bLoiREC0QaOc5'; // Webhook channel test
 // --------------------required part------------------------------
 const files = ['./cypress/reports/test-report.html']; // REQUIRED: File paths
 // --------------------custom data------------------------------
-const customUsername = 'Bot Check Centralized NPS API'; // Custom name for Bot's username in Discord
+const customUsername = 'Bot Cypress Run'; // Custom name for Bot's username in Discord
 const customMessage = 'Check Centralized NPS API'; // Custom message for Bot's message in Discord
 const customAvatar = 'https://cdn.sanity.io/images/o0o2tn5x/production/13b9c8412093e2f0cdb5495e1f59144967fa1664-512x512.jpg'; // Custom avatar URL for Bot in Discord
 // --------------------custom data------------------------------
@@ -49,6 +49,19 @@ module.exports = defineConfig({
     env:{
       UAT1: 'https://ktbsurveyconductui-uat.feedback180.com/STAFF15',
       UAT2: 'https://ktbsurveyconductui-uat.feedback180.com/STAFF14',
+      invitUAT1: 'https://ktbshorturl-uat.feedback180.com/LL7qzfO',
+      invitUAT2: 'https://ktbshorturl-uat.feedback180.com/WL7qzfF',
+      invitUAT3: 'https://ktbshorturl-uat.feedback180.com/mL7qzf7',
+      invitUAT4: 'https://ktbshorturl-uat.feedback180.com/m37qzfb',
+      invitUAT5: 'https://ktbshorturl-uat.feedback180.com/337qzff',
+      invitUAT6: 'https://ktbshorturl-uat.feedback180.com/yL7qzf5',
+      invitUAT7: 'https://ktbshorturl-uat.feedback180.com/WW7qzfN',
+      invitUAT8: 'https://ktbshorturl-uat.feedback180.com/yW7qzfn',
+      invitUAT9: 'https://ktbshorturl-uat.feedback180.com/Wy7qzfT',
+      invitUAT10: 'https://ktbshorturl-uat.feedback180.com/yj7qzfg',
+      invitUAT11: 'https://ktbshorturl-uat.feedback180.com/yy7qzfp',
+      invitUAT12: 'https://ktbshorturl-uat.feedback180.com/jj7qzf2',
+
       PROD1: '',
       PROD2: '',
       inVit1: 'https://ktbshorturl-uat.feedback180.com/jW7EJef',
