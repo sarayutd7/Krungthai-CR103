@@ -8,7 +8,7 @@ describe('CR103: Q1A >> Q3A >> Q4A >> Q5 >> Q6 >> Q7 >> Q8', () => {
         cy.fixture('../fixtures/SituationCase1.json').then((data) => {
             surveyData = data;
             //const fullUrl = Cypress.env('UAT');
-            const fullUrl = Cypress.env('UAT1');
+            const fullUrl = Cypress.env('invitUAT1');
             // cy.visit(fullUrl);
             // cy.viewport(Cypress.env('UAT'), Cypress.env('UAT')); 
 
